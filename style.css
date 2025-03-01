@@ -1,0 +1,250 @@
+/* Resetowanie domyślnych stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Podstawowe style dla całej strony */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Nagłówek */
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;  /* Centruje zawartość w poziomie */
+    align-items: center;      /* Centruje zawartość w pionie */
+    position: relative;       /* Pozwala na absolutne pozycjonowanie innych elementów */
+  }
+  
+  header .logo img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Nawigacja */
+  nav {
+    position: absolute;
+    right: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #f4f4f4;
+  }
+  
+  /* Sekcja o zespole */
+  .section-about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .section-about h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-about p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Sekcja o członkach zespołu */
+  .section-members {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eaeaea;
+  }
+  
+  .section-members h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .member {
+    background-color: #fff;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .member h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .member p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Galeria */
+  .section-gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .section-gallery h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Sekcja Nowości */
+  .section-news {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eaeaea;
+  }
+  
+  .section-news h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-news p {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .section-koncerty {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.section-koncerty h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.koncert {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.koncert:hover {
+    transform: scale(1.05); /* Powiększenie na hover */
+}
+
+.koncert h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #007bff; /* Kolor główny */
+}
+
+.koncert p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Stylizacja sekcji z osadzonym postem Facebooka */
+.fb-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Zapobiega wyciekaniu zawartości */
+    transition: transform 0.3s ease;
+    max-width: 550px;
+}
+
+.fb-post:hover {
+    transform: scale(1.05); /* Efekt powiększenia na hover */
+}
+
+  
+ /* Sekcja mediów społecznościowych */
+.section-social-media {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.section-social-media h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Zwiększenie odległości między ikonami */
+}
+
+.social-icon {
+    font-size: 70px; /* Zwiększenie rozmiaru ikony */
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Zmiana koloru ikony na niebieski podczas hover */
+    transform: scale(1.1);  /* Powiększenie o 10% przy najechaniu */
+}
+  
